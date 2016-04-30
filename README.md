@@ -1,4 +1,20 @@
-# goutils
+## goutils
 Package a common golang language library
 
-golang通用库
+## Installation
+
+Use go get 
+
+```go
+go get github.com/xigang/crypto
+``` 
+
+
+## Usage
+
+look tests.
+
+
+## License
+
+Apache License
