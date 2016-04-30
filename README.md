@@ -6,7 +6,7 @@ Package a common golang language library
 Use go get 
 
 ```go
-go get github.com/xigang/crypto
+go get github.com/xigang/goutils
 ``` 
 
 
