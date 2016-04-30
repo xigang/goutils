@@ -1,8 +1,6 @@
-package goutils
+package math
 
 import (
-	"crypto/md5"
-	"encoding/hex"
 	"math"
 	"time"
 )
@@ -48,20 +46,4 @@ func VersionOrdinal(version string) string {
 		vo[j]++
 	}
 	return string(vo)
-}
-
-//获取两个时间之间间隔的天数
-func diffTime(t1, t2 time.Time) time.Duration {
-	return t2.Sub(t1)
-}
-
-func DiffDays(t1, t2 time.Time) int64 {
-	return (diffTime(t1, t2) / DURATION_DAY).Nanoseconds()
-}
-
-//MD5 生成
-func MD5(s string) string {
-	h := md5.New()
-	h.Write([]byte(s))
-	return hex.EncodeToString(h.Sum(nil))
 }

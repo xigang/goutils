@@ -1,9 +1,8 @@
-package goutils
+package math
 
 import (
 	"fmt"
 	"testing"
-	"time"
 )
 
 //output:
@@ -69,29 +68,4 @@ func TestVersionOrdinal(t *testing.T) {
 			fmt.Println(version.a, "=", version.b)
 		}
 	}
-}
-
-// == RUN TestDiffDays
-// 2016-04-10 10:00:00 +0000 UTC
-// --- PASS: TestDiffDays (0.00s)
-// 	common_func_test.go:80: diff days: 10
-// PASS
-// ok  	github.com/zakka-cn/goutils	0.007s
-func TestDiffDays(t *testing.T) {
-	strt := "2016-04-10 10:00:00"
-	t1, _ := time.Parse("2006-01-02 15:04:05", strt)
-	fmt.Println(t1)
-	t2 := time.Now()
-	diffDays := DiffDays(t1, t2)
-	t.Log("diff days:", diffDays)
-}
-
-// === RUN TestMD5
-// --- PASS: TestMD5 (0.00s)
-// 	common_func_test.go:91: dc73525b6b65a438568f8164fad30c44
-// PASS
-// ok  	github.com/zakka-cn/goutils	0.007s
-func TestMD5(t *testing.T) {
-	str := "wangxigang2014@gmail.com"
-	t.Log(MD5(str))
 }
