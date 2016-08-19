@@ -71,6 +71,11 @@ func FmtIntToString(value interface{}) (str string, err error) {
 	return
 }
 
+// to convert a float number to a string
+func FloatToString(input_num float64) string {
+	return strconv.FormatFloat(input_num, 'f', 6, 64)
+}
+
 //将一个对象转换为json
 func ToJson(obj interface{}) (string, error) {
 	res, err := json.Marshal(obj)
