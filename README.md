@@ -16,4 +16,4 @@ look tests.
 
 
 ## License
-[Apache License](https://github.com/xigang/goutils/blob/master/LICENSE)
+[MIT](https://github.com/xigang/goutils/blob/master/LICENSE)
